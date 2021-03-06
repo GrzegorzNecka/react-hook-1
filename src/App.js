@@ -25,3 +25,4 @@ function App() {
 export default App;
 
 //https://github.com/eduwebpl/kurs-react-techniki-zaawansowane/tree/02.2
+//https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/hoc---komponent-blizniaczy
