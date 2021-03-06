@@ -21,10 +21,6 @@ class ItemsList extends Component {
   };
 
   render() {
-    // const listClass = cx(styles.list, {
-    //   [styles.isCollapsed]: this.state.isCollapsed
-    // });
-
     return (
       <div>
         <button className="button is-dark is-large" onClick={this.toggle}>
