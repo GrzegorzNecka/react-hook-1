@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./style.css";
 
 const items = [
   `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
@@ -29,11 +30,12 @@ class ItemsList extends Component {
         <button className="button is-dark is-large" onClick={this.toggle}>
           Collapse
         </button>
-        <ul>
+        <ul className={`list ${this.state.isCollapsed && "is-Collapsed"}`}>
           {items.map(item => (
             <li className="notification is-primary">{item}</li>
           ))}
         </ul>
+        <p> is list collapsed {this.state.isCollapsed.toString()}</p>
       </div>
     );
   }
