@@ -3,14 +3,14 @@ import withCollapse from "./../../hoc/withCollapse";
 
 // columns to element Tips.js
 
-const Columns = ({ data }) => {
+const Columns = ({ isCollapsed }) => {
   return (
     <div className="columns">
       <div className="column">
         <button className="button is-dark is-large">collapse</button>
-        <div>
+        <div className={isCollapsed && `is-Collapsed`}>
           <div className="column">
-            <div className="notification is-primary">{data}</div>
+            <div className="notification is-primary">ss</div>
           </div>
           <div className="column">
             <div className="notification is-primary">Second column</div>

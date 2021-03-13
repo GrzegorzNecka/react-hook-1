@@ -10,3 +10,6 @@
 - hook jest wywoływany w plikach:
   - ItemsList
   - Columns
+
+
+- HOK - to jest funkcja, która zwraca komponent, ta funkcja 
