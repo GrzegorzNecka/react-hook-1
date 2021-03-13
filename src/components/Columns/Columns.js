@@ -1,13 +1,16 @@
 import React from "react";
+import withCollapse from "./../../hoc/withCollapse";
 
-const Columns = () => {
+// columns to element Tips.js
+
+const Columns = ({ data }) => {
   return (
     <div className="columns">
       <div className="column">
         <button className="button is-dark is-large">collapse</button>
         <div>
           <div className="column">
-            <div className="notification is-primary">First column</div>
+            <div className="notification is-primary">{data}</div>
           </div>
           <div className="column">
             <div className="notification is-primary">Second column</div>
@@ -24,6 +27,4 @@ const Columns = () => {
   );
 };
 
-export default Columns;
-
-//https://github.com/eduwebpl/kurs-react-techniki-zaawansowane/blob/02.3-finish/02/src/components/Columns/Columns.js
+export default withCollapse(Columns);
