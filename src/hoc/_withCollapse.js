@@ -1,7 +1,7 @@
 import React from "react";
 
 const withCollapse = WrapComponent => {
-  return () => <WrapComponent isCollapsed={true} />;
+  return props => <WrapComponent {...props} isCollapsed={true} />;
 };
 
 export default withCollapse;
